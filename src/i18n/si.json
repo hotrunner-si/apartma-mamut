@@ -1,0 +1,113 @@
+{
+  "brand": {
+    "name": "Apartma MAmut 1850"
+  },
+
+  "nav": {
+    "darkMode": "Temni način",
+    "lightMode": "Svetli način",
+    "about": "O nas",
+    "gallery": "Galerija",
+    "prices": "Cene",
+    "availability": "Razpoložljivost",
+    "location": "Lokacija",
+    "contact": "Kontakt"
+  },
+
+  "hero": {
+    "title": "Vaše popolno bivanje v osrčju Slovenije",
+    "subtitle": "Sodoben, udoben in popolnoma opremljen apartma za pare, družine in poslovne goste.",
+    "cta": "Rezerviraj zdaj",
+    "imageAlt": "Čudovit pogled na mesto Kamnik in gore."
+  },
+
+  "about": {
+    "title": "O apartmaju",
+    "text": "Apartma MAmut 1850 ponuja prijetno in elegantno namestitev s čudovitim razgledom na gore. Nahaja se blizu narave in lokalnih znamenitosti ter vključuje popolnoma opremljeno kuhinjo, brezplačen Wi-Fi, zasebno parkirišče in prostoren balkon.",
+    "features": [
+      {
+        "title": "Studio",
+        "text": "Udobno bivanje za 2 gosta."
+      },
+      {
+        "title": "Popolna oprema",
+        "text": "Kuhinja, pralni stroj, TV in hiter internet."
+      },
+      {
+        "title": "Odlična lokacija",
+        "text": "Blizu pohodniških poti, restavracij in centra mesta."
+      }
+    ]
+  },
+
+  "gallery": {
+    "title": "Galerija",
+    "text": "Oglejte si našo galerijo in doživite vzdušje apartmaja MAmut 1850.",
+    "grid": {
+      "01": "Living room with mountain view",
+      "02": "Dining area with modern decor",
+      "03": "Cozy seating area with fireplace",
+      "04": "Bedroom with comfortable bed"
+    },
+    "tape": {
+      "01": "Balcony with mountain view",
+      "02": "Dining area with modern decor",
+      "03": "Cozy seating area with fireplace",
+      "04": "Bedroom with comfortable bed",
+      "05": "Living room with cozy seating",
+      "06": "Bedroom with comfortable bed",
+      "07": "Balcony with mountain view",
+      "08": "Dining area with modern decor",
+      "09": "Cozy seating area with fireplace",
+      "10": "Bedroom with comfortable bed",
+      "11": "Living room with cozy seating",
+      "12": "Bedroom with comfortable bed",
+      "13": "Balcony with mountain view",
+      "14": "Dining area with modern decor",
+      "15": "Cozy seating area with fireplace",
+      "16": "Bedroom with comfortable bed",
+      "17": "Living room with cozy seating",
+      "18": "Bedroom with comfortable bed",
+      "19": "Balcony with mountain view",
+      "20": "Dining area with modern decor"
+    }
+  },
+
+  "prices": {
+    "title": "Cene",
+    "season1": "nizka",
+    "season2": "srednja",
+    "season3": "visoka",
+    "season4": "najvišja"
+  },
+
+  "availability": {
+    "title": "Razpoložljivost",
+    "text": "Preverite razpoložljive termine in nas kontaktirajte za rezervacijo.",
+    "details": [
+      "Na voljo: večina vikendov in praznikov.",
+      "Minimalno bivanje: 2 noči.",
+      "Prijava: po 15:00",
+      "Odjava: do 10:00"
+    ]
+  },
+
+  "location": {
+    "title": "Lokacija",
+    "text": "Apartma se nahaja v Kamniku in omogoča hiter dostop do Velike planine, Ljubljane in Alp.",
+    "mapText": "Kamnik, Slovenija"
+  },
+
+  "contact": {
+    "title": "Kontakt",
+    "email": "mamut1850{'@'}gmail.com",
+    "phone": "+386 41 791 363",
+    "address": "Prešernova ulica 12, 1241 Kamnik, Slovenia"
+  },
+
+  "footer": {
+    "description": "Elegantno bivanje z udobjem in panoramskim razgledom.",
+    "rights": "Vse pravice pridržane.",
+    "country": "Slovenija"
+  }
+}

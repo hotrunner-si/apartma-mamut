@@ -1,0 +1,115 @@
+{
+  "brand": {
+    "name": "Apartment Mamut 1850"
+  },
+
+  "nav": {
+    "darkMode": "Dark Mode",
+    "lightMode": "Light Mode",
+    "about": "About",
+    "gallery": "Gallery",
+    "prices": "Prices",
+    "availability": "Availability",
+    "location": "Location",
+    "contact": "Contact"
+  },
+
+  "hero": {
+    "title": "Your Perfect Stay in the Heart of Slovenia",
+    "subtitle": "Modern, comfortable, and fully equipped apartment ideal for couples, families, and business travelers.",
+    "cta": "Book Now",
+    "imageAlt": "A stunning view of the town and mountains."
+  },
+
+  "about": {
+    "title": "About the Apartment",
+    "text": "Apartment Mamut 1850 offers a cozy and elegant accommodation with stunning mountain views. Located near nature and local attractions, the apartment features a fully equipped kitchen, free Wi-Fi, private parking, and a spacious balcony.",
+    "features": [
+      {
+        "title": "Studio",
+        "text": "Comfortable sleeping space for 2 guests."
+      },
+      {
+        "title": "Fully Equipped",
+        "text": "Kitchen, washing machine, TV, and fast internet."
+      },
+      {
+        "title": "Great Location",
+        "text": "Close to hiking trails, restaurants, and city center."
+      }
+    ]
+  },
+
+  
+  "gallery": {
+    "title": "Gallery",
+    "text": "Take a look at our gallery and experience the atmosphere of Apartment Mamut 1850.",
+    "grid": {
+      "01": "Living room with mountain view",
+      "02": "Dining area with modern decor",
+      "03": "Cozy seating area with fireplace",
+      "04": "Bedroom with comfortable bed"
+    },
+    "tape": {
+      "01": "Balcony with mountain view",
+      "02": "Dining area with modern decor",
+      "03": "Cozy seating area with fireplace",
+      "04": "Bedroom with comfortable bed",
+      "05": "Living room with cozy seating",
+      "06": "Bedroom with comfortable bed",
+      "07": "Balcony with mountain view",
+      "08": "Dining area with modern decor",
+      "09": "Cozy seating area with fireplace",
+      "10": "Bedroom with comfortable bed",
+      "11": "Living room with cozy seating",
+      "12": "Bedroom with comfortable bed",
+      "13": "Balcony with mountain view",
+      "14": "Dining area with modern decor",
+      "15": "Cozy seating area with fireplace",
+      "16": "Bedroom with comfortable bed",
+      "17": "Living room with cozy seating",
+      "18": "Bedroom with comfortable bed",
+      "19": "Balcony with mountain view",
+      "20": "Dining area with modern decor"
+    }
+  },
+
+  "prices": {
+    "title": "Prices",
+    "season1": "Low Season",
+    "season2": "Mid Season",
+    "season3": "High Season",
+    "season4": "Peak Season"
+  },
+
+  "availability": {
+    "title": "Availability",
+    "text": "Check our current availability and contact us to confirm your dates.",
+    "details": [
+      "Available: Most weekends and holiday periods.",
+      "Minimum stay: 2 nights.",
+      "Check-in: After 15:00",
+      "Check-out: Before 10:00"
+    ]
+  },
+
+  "location": {
+    "title": "Location",
+    "text": "Situated in Kamnik, Slovenia, the apartment provides easy access to Velika Planina, Ljubljana, and the surrounding Alps.",
+    "mapText": "Kamnik, Slovenia",
+    "mapAlt": "Map showing the location of Apartment Mamut 1850 in Kamnik, Slovenia"
+  },
+
+  "contact": {
+    "title": "Contact",
+    "email": "mamut1850{'@'}gmail.com",
+    "phone": "+386 41 791 363",
+    "address": "Prešernova ulica 12, 1241 Kamnik, Slovenia"
+  },
+
+  "footer": {
+    "description": "Elegant accommodation with comfort and panoramic views.",
+    "rights": "All rights reserved.",
+    "country": "Slovenia"
+  }
+}
