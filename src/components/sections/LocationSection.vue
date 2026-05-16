@@ -23,9 +23,6 @@ const { t } = useI18n()
 
 <style scoped>
 .map {
-  margin-top: 2rem;
-  padding: 4rem;
-  background: var(--color-surface);
   text-align: center;
   border-radius: var(--radius-md);
 }

@@ -1,6 +1,6 @@
 {
   "brand": {
-    "name": "Apartment Mamut 1850"
+    "name": "Apartment Mamut"
   },
 
   "nav": {
@@ -15,8 +15,8 @@
   },
 
   "hero": {
-    "title": "Your Perfect Stay in the Heart of Slovenia",
-    "subtitle": "Modern, comfortable, and fully equipped apartment ideal for couples, families, and business travelers.",
+    "title": "Your Perfect Stay",
+    "subtitle": "In the Heart of Slovenia.",
     "cta": "Book Now",
     "imageAlt": "A stunning view of the town and mountains."
   },

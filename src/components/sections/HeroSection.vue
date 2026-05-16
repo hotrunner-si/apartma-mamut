@@ -35,7 +35,8 @@ const bgStyle = computed(() => ({
   justify-content: center;
   text-align: center;
   overflow: hidden;
-  padding: 6rem 1rem 2rem;
+
+  padding: clamp(5rem, 8vh, 7rem) 1.25rem 3rem;
 }
 
 /* background image layer */
@@ -64,20 +65,58 @@ const bgStyle = computed(() => ({
 .hero-content {
   position: relative;
   z-index: 2;
-  color: var(--color-text-primary);
+
   max-width: 900px;
+  width: 100%;
+
+  padding: 0 1rem;
+  color: var(--color-text-primary);
 }
 
+/* =========================
+   RESPONSIVE TYPOGRAPHY
+   ========================= */
+
 .hero-content h1 {
-  font-size: 5rem;
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  line-height: 1.05;
   color: white;
   text-shadow: var(--hero-text-shadow);
   letter-spacing: -0.02em;
+  margin-bottom: 1rem;
 }
 
 .hero-content p {
+  font-size: clamp(1rem, 2.2vw, 1.25rem);
   color: rgba(255, 255, 255, 0.9);
   text-shadow: var(--hero-text-shadow);
-  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  max-width: 60ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* =========================
+   MOBILE OPTIMIZATION
+   ========================= */
+@media (max-width: 768px) {
+  .hero {
+    min-height: 95vh;
+    padding: 6rem 1rem 2rem;
+  }
+
+  .hero-content {
+    padding: 0 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    min-height: 95vh;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
 }
 </style>

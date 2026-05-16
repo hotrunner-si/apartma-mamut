@@ -1,63 +1,180 @@
 <template>
   <header class="navbar">
+    
     <div class="logo">
       <a :href="navBar.mainLink">
         {{ t('brand.name') }}
       </a>
     </div>
 
-    <ul class="nav-links">
-      <li v-for="item in navBar.items" :key="item.nameKey">
-        <a :href="item.link">
-          {{ t(item.nameKey) }}
-        </a>
-      </li>
-    </ul>
+    <button
+      class="hamburger"
+      :class="{ open: isMenuOpen }"
+      @click="toggleMenu"
+      aria-label="Menu"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
 
-    <div class="navbar-controls">
-      <!-- Language Switch -->
-      <div class="language-switch">
+    <div
+      v-if="isMenuOpen"
+      class="overlay"
+      @click="closeMenu"
+    />
+
+    <div class="menu" :class="{ open: isMenuOpen }">
+      <ul class="nav-links">
+        <li v-for="item in navBar.items" :key="item.nameKey">
+          <a :href="item.link" @click="closeMenu">
+            {{ t(item.nameKey) }}
+          </a>
+        </li>
+      </ul>
+
+      <div class="navbar-controls">
+        <!-- Language Switch -->
+        <div class="language-switch">
+          <button
+            type="button"
+            class="language-button"
+            :class="{ active: language === 'EN' }"
+            @click="language = 'EN'"
+          >
+            EN
+          </button>
+
+          <button
+            type="button"
+            class="language-button"
+            :class="{ active: language === 'SI' }"
+            @click="language = 'SI'"
+          >
+            SI
+          </button>
+        </div>
+
+        <!-- Dark Mode -->
         <button
           type="button"
-          class="language-button"
-          :class="{ active: language === 'EN' }"
-          @click="language = 'EN'"
+          class="theme-button"
+          @click="darkMode = !darkMode"
         >
-          EN
-        </button>
-
-        <button
-          type="button"
-          class="language-button"
-          :class="{ active: language === 'SI' }"
-          @click="language = 'SI'"
-        >
-          SI
+          {{ darkMode ? t('nav.lightMode') : t('nav.darkMode') }}
         </button>
       </div>
-
-      <!-- Dark Mode Toggle -->
-      <button
-        type="button"
-        class="theme-button"
-        @click="darkMode = !darkMode"
-      >
-        {{ darkMode ? t('nav.lightMode') : t('nav.darkMode') }}
-      </button>
     </div>
   </header>
 </template>
 
 <script setup>
+import { ref, watch, onMounted, onBeforeUnmount } from 'vue'
+import { useRoute } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 import { useSettings } from '@/composables/useSettings'
 import { navBar } from '@/data/content'
 
 const { t } = useI18n()
 const { language, darkMode } = useSettings()
+const route = useRoute()
+
+const isMenuOpen = ref(false)
+
+function toggleMenu() {
+  isMenuOpen.value = !isMenuOpen.value
+}
+
+function closeMenu() {
+  isMenuOpen.value = false
+}
+
+/* Close on route change */
+watch(() => route.fullPath, () => {
+  closeMenu()
+})
+
+/* ESC key close */
+function handleKey(e) {
+  if (e.key === 'Escape') closeMenu()
+}
+
+/* Scroll lock */
+function lockScroll(lock) {
+  document.body.style.overflow = lock ? 'hidden' : ''
+}
+
+watch(isMenuOpen, (val) => {
+  lockScroll(val)
+})
+
+onMounted(() => {
+  window.addEventListener('keydown', handleKey)
+})
+
+onBeforeUnmount(() => {
+  window.removeEventListener('keydown', handleKey)
+  lockScroll(false)
+})
 </script>
 
+
 <style scoped>
+
+.hamburger {
+  display: none;
+  width: 28px;
+  height: 22px;
+  position: relative;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1200;
+}
+
+.hamburger span {
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: var(--color-text-primary);
+  left: 0;
+  transition: 0.3s ease;
+}
+
+.hamburger span:nth-child(1) { top: 0; }
+.hamburger span:nth-child(2) { top: 10px; }
+.hamburger span:nth-child(3) { top: 20px; }
+
+/* X animation */
+.hamburger.open span:nth-child(1) {
+  transform: rotate(45deg);
+  top: 10px;
+}
+
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg);
+  top: 10px;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.1);
+  z-index: 999;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+  margin-left: 2rem;
+}
+
 .navbar {
   position: fixed;
   top: 0;
@@ -71,7 +188,7 @@ const { language, darkMode } = useSettings()
   justify-content: space-between;
   gap: 2rem;
 
-  background: rgba(var(--color-surface), 0.8);
+  background: (var(--color-surface));
   backdrop-filter: blur(10px);
 }
 
@@ -121,7 +238,6 @@ const { language, darkMode } = useSettings()
   overflow: hidden;
   border: 1px solid var(--color-border);
   border-radius: 999px;
-  background: var(--color-surface);
 }
 
 .language-button {
@@ -147,7 +263,7 @@ const { language, darkMode } = useSettings()
   padding: 0.55rem 1rem;
   border: 1px solid var(--color-border);
   border-radius: 999px;
-  background: var(--color-surface);
+  background: var(--color-background);
   color: var(--color-text-primary);
   font-size: 0.875rem;
   font-weight: 600;
@@ -161,23 +277,62 @@ const { language, darkMode } = useSettings()
   border-color: var(--color-primary);
 }
 
-/* Mobile */
 @media (max-width: 992px) {
-  .navbar {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
+  .hamburger {
+    display: block;
+  }
+
+  .menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    height: 100vh;
+    width: 280px;
+
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    padding-top: 4rem 1.5rem 2rem;
+
+    background: var(--color-background);
+    opacity: 0.95;
+    box-shadow: -10px 0 30px rgba(0,0,0,0.2);
+
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    z-index: 1100;
+  }
+
+  .menu.open {
+    transform: translateX(0);
   }
 
   .nav-links {
-    order: 3;
-    flex: 0 0 100%;
-    justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 1.2rem;
   }
 
   .navbar-controls {
-    order: 2;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-top: 0;
+    margin-bottom: 2rem; /* remove extra push */
+    width: 100%;
+    align-items: center;
+  }
+
+  /* optional: visually group controls tighter */
+  .language-switch {
+    transform: scale(0.95);
+  }
+
+  .theme-button {
+    width: 100%;
+    max-width: 180px;
   }
 }
 </style>

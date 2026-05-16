@@ -1,6 +1,6 @@
 {
   "brand": {
-    "name": "Apartma MAmut 1850"
+    "name": "Apartma Mamut"
   },
 
   "nav": {
@@ -15,15 +15,15 @@
   },
 
   "hero": {
-    "title": "Vaše popolno bivanje v osrčju Slovenije",
-    "subtitle": "Sodoben, udoben in popolnoma opremljen apartma za pare, družine in poslovne goste.",
+    "title": "Vaše popolno bivanje",
+    "subtitle": "V osrčju Slovenije",
     "cta": "Rezerviraj zdaj",
     "imageAlt": "Čudovit pogled na mesto Kamnik in gore."
   },
 
   "about": {
     "title": "O apartmaju",
-    "text": "Apartma MAmut 1850 ponuja prijetno in elegantno namestitev s čudovitim razgledom na gore. Nahaja se blizu narave in lokalnih znamenitosti ter vključuje popolnoma opremljeno kuhinjo, brezplačen Wi-Fi, zasebno parkirišče in prostoren balkon.",
+    "text": "Apartma Mamut 1850 ponuja prijetno in elegantno namestitev s čudovitim razgledom na gore. Nahaja se blizu narave in lokalnih znamenitosti ter vključuje popolnoma opremljeno kuhinjo, brezplačen Wi-Fi, zasebno parkirišče in prostoren balkon.",
     "features": [
       {
         "title": "Studio",
@@ -42,7 +42,7 @@
 
   "gallery": {
     "title": "Galerija",
-    "text": "Oglejte si našo galerijo in doživite vzdušje apartmaja MAmut 1850.",
+    "text": "Oglejte si našo galerijo in doživite vzdušje apartmaja Mamut 1850.",
     "grid": {
       "01": "Living room with mountain view",
       "02": "Dining area with modern decor",
@@ -95,7 +95,8 @@
   "location": {
     "title": "Lokacija",
     "text": "Apartma se nahaja v Kamniku in omogoča hiter dostop do Velike planine, Ljubljane in Alp.",
-    "mapText": "Kamnik, Slovenija"
+    "mapText": "Kamnik, Slovenija",
+    "mapAlt": "Zemljevid lokacije apartmaja Mamut 1850"
   },
 
   "contact": {

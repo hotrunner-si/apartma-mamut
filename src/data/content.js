@@ -31,7 +31,7 @@ export const navBar = {
 
 export const content = {
   hero: {
-    image: "/images/kamnik-dron-01.jpeg",
+    image: "/images/kamnik-dron-01.jpg",
     imageAlt: "hero.imageAlt",
   },
 

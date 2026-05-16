@@ -16,13 +16,6 @@
       </div>
 
       <div class="gallery-wrapper">
-        <button
-          class="gallery-btn left"
-          type="button"
-          @click="scrollGallery('left')"
-        >
-          ‹
-        </button>
 
         <div class="gallery-track" ref="galleryTrack">
           <img
@@ -35,13 +28,23 @@
           />
         </div>
 
-        <button
-          class="gallery-btn right"
-          type="button"
-          @click="scrollGallery('right')"
-        >
-          ›
-        </button>
+        <div class="gallery-controls">
+          <button
+            class="gallery-btn"
+            type="button"
+            @click="scrollGallery('left')"
+          >
+            ‹
+          </button>
+
+          <button
+            class="gallery-btn"
+            type="button"
+            @click="scrollGallery('right')"
+          >
+            ›
+          </button>
+        </div>
       </div>
     </div>
   </section>
@@ -71,9 +74,11 @@ function scrollGallery(direction) {
 
 <style scoped>
 .gallery-wrapper {
-  position: relative;
   display: flex;
+  flex-direction: column;
   align-items: center;
+  gap: 1rem;
+  position: relative;
 }
 
 .gallery-grid {
@@ -94,13 +99,15 @@ function scrollGallery(direction) {
 .gallery-track {
   display: flex;
   gap: 1rem;
+
   overflow-x: auto;
   scroll-behavior: smooth;
-  scrollbar-width: none;
-  padding: 1rem 0;
-
-  /* Smooth scrolling on touch devices */
   -webkit-overflow-scrolling: touch;
+
+  scrollbar-width: none;
+
+  width: 100%;
+  padding: 1rem 0;
 }
 
 .gallery-track::-webkit-scrollbar {
@@ -116,18 +123,27 @@ function scrollGallery(direction) {
   box-shadow: var(--shadow-soft);
 }
 
+.gallery-controls {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
 .gallery-btn {
-  position: absolute;
-  z-index: 2;
-  width: 48px;
-  height: 48px;
+  position: static;
+  width: 44px;
+  height: 44px;
+
   border: none;
   border-radius: 50%;
-  background: rgba(49, 39, 15, 0.8);
+
+  background: rgba(49, 39, 15, 0.85);
   color: white;
-  font-size: 2rem;
-  line-height: 1;
+
+  font-size: 1.5rem;
   cursor: pointer;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -141,7 +157,7 @@ function scrollGallery(direction) {
   right: -60px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 668px) {
   .gallery-image {
     width: 280px;
     height: 200px;
