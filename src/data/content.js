@@ -111,27 +111,27 @@ export const prices = {
   cards: [
     {
       cardKey: 'prices.season1',
-      price1: '100€',
-      price2: '80€',
-      season: '1.5. - 30.9.',
+      price1: '110€',
+      price2: '90€',
+      season: '27. jul. - 1. sep.',
     },
     {
       cardKey: 'prices.season2',
-      price1: '120€',
+      price1: '99€',
       price2: '90€',
-      season: '1.10. - 30.4.',
+      season: '1. jun. - 27. jul.',
     },
     {
       cardKey: 'prices.season3',
-      price1: '140€',
-      price2: '100€',
-      season: '44',
+      price1: '85€',
+      price2: '77€',
+      season: '1. sep. - 14. sep.',
     },
     {
       cardKey: 'prices.season4',
-      price1: '120€',
-      price2: '90€',
-      season: '1.',
+      price1: '76€',
+      price2: '70€',
+      season: '14. sep. -',
     },
   ]
 }

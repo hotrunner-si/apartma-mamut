@@ -23,7 +23,7 @@
 
   "about": {
     "title": "O apartmaju",
-    "text": "Apartma Mamut 1850 ponuja prijetno in elegantno namestitev s čudovitim razgledom na gore. Nahaja se blizu narave in lokalnih znamenitosti ter vključuje popolnoma opremljeno kuhinjo, brezplačen Wi-Fi, zasebno parkirišče in prostoren balkon.",
+    "text": "Apartma Mamut 1850 ponuja prijetno in elegantno namestitev s čudovitim razgledom na gore. Nahaja se blizu narave in lokalnih znamenitosti ter vključuje popolnoma opremljeno kuhinjo, brezplačen Wi-Fi, zasebno parkirišče in udobno posteljo.",
     "features": [
       {
         "title": "Studio",
@@ -74,11 +74,11 @@
   },
 
   "prices": {
-    "title": "Cene",
-    "season1": "nizka",
-    "season2": "srednja",
-    "season3": "visoka",
-    "season4": "najvišja"
+    "title": "Cene / noč",
+    "season1": "Vrhunec sezone",
+    "season2": "visoka sezona",
+    "season3": "prehodna sezona",
+    "season4": "nizka sezona"
   },
 
   "availability": {

@@ -72,80 +72,60 @@
 <script setup>
 import { ref, watch, onMounted, onBeforeUnmount } from 'vue'
 import { useRoute } from 'vue-router'
-import { useI18n } from 'vue-i18n'
-import { useSettings } from '@/composables/useSettings'
-import { navBar } from '@/data/content'
+import { useI18n } from 'vue-i18n' 
+import { useSettings } from '@/composables/useSettings' 
+import { navBar } from '@/data/content' 
 
-const { t } = useI18n()
-const { language, darkMode } = useSettings()
-const route = useRoute()
+const { t } = useI18n() 
+const { language, darkMode } = useSettings() 
+const route = useRoute() 
 
-const isMenuOpen = ref(false)
+const isMenuOpen = ref(false) 
 
-function toggleMenu() {
-  isMenuOpen.value = !isMenuOpen.value
-}
+function toggleMenu() { isMenuOpen.value = !isMenuOpen.value } 
 
-function closeMenu() {
-  isMenuOpen.value = false
-}
+function closeMenu() { isMenuOpen.value = false }
+watch(() => route.fullPath, () => { closeMenu() })
 
-/* Close on route change */
-watch(() => route.fullPath, () => {
-  closeMenu()
-})
+function handleKey(e) { if (e.key === 'Escape') closeMenu() }
 
-/* ESC key close */
-function handleKey(e) {
-  if (e.key === 'Escape') {
+function lockScroll(lock) { document.body.style.overflow = lock ? '' : '' } 
+
+watch(isMenuOpen, (val) => { lockScroll(val) }) 
+
+onMounted(() => { window.addEventListener('keydown', handleKey) }) 
+
+onBeforeUnmount(() => { window.removeEventListener('keydown', handleKey) 
+
+lockScroll(false) }) 
+
+let scrollTimeout = null
+
+function handleUserScroll() {
+  if (!isMenuOpen.value) return
+
+  clearTimeout(scrollTimeout)
+
+  scrollTimeout = setTimeout(() => {
     closeMenu()
-  }
+  }, 80)
 }
-
-/* Close menu when page scrolls */
-function handleScroll() {
-  if (isMenuOpen.value) {
-    closeMenu()
-  }
-}
-
-/* Lock body scroll only when menu is open */
-watch(isMenuOpen, (isOpen) => {
-  document.body.style.overflow = isOpen ? 'hidden' : ''
-})
 
 onMounted(() => {
   window.addEventListener('keydown', handleKey)
-
-  /*
-    Use document-level listeners in capture phase.
-    This ensures the menu closes even if:
-    - body scrolling is locked (overflow: hidden)
-    - scrolling occurs inside another scrollable container
-    - touch scrolling happens on mobile
-  */
-  document.addEventListener('scroll', handleScroll, true)
-  document.addEventListener('touchmove', handleScroll, {
-    passive: true,
-    capture: true,
-  })
-  document.addEventListener('wheel', handleScroll, {
-    passive: true,
-    capture: true,
-  })
+  window.addEventListener('wheel', handleUserScroll, { passive: true })
+  window.addEventListener('touchmove', handleUserScroll, { passive: true })
 })
 
 onBeforeUnmount(() => {
   window.removeEventListener('keydown', handleKey)
+  window.removeEventListener('wheel', handleUserScroll)
+  window.removeEventListener('touchmove', handleUserScroll)
 
-  document.removeEventListener('scroll', handleScroll, true)
-  document.removeEventListener('touchmove', handleScroll, true)
-  document.removeEventListener('wheel', handleScroll, true)
-
-  document.body.style.overflow = ''
+  lockScroll(false)
 })
-</script>
 
+</script>
 
 <style scoped>
 

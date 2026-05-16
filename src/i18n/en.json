@@ -23,7 +23,7 @@
 
   "about": {
     "title": "About the Apartment",
-    "text": "Apartment Mamut 1850 offers a cozy and elegant accommodation with stunning mountain views. Located near nature and local attractions, the apartment features a fully equipped kitchen, free Wi-Fi, private parking, and a spacious balcony.",
+    "text": "Apartment Mamut 1850 offers a cozy and elegant accommodation with stunning mountain views. Located near nature and local attractions, the apartment features a fully equipped kitchen, free Wi-Fi, private parking, and a spacious bed.",
     "features": [
       {
         "title": "Studio",
@@ -75,11 +75,11 @@
   },
 
   "prices": {
-    "title": "Prices",
-    "season1": "Low Season",
-    "season2": "Mid Season",
-    "season3": "High Season",
-    "season4": "Peak Season"
+    "title": "Prices / night",
+    "season1": "Peak Season",
+    "season2": "High Season",
+    "season3": "Mid Season",
+    "season4": "Low Season"
   },
 
   "availability": {
