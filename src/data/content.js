@@ -157,4 +157,5 @@ export const footer = {
   postNumber: "1241",
   town: "Kamnik", 
   country: "Slovenia",
+  authors: "https://nejs-ursic.netlify.app"
 }

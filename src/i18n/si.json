@@ -109,6 +109,7 @@
   "footer": {
     "description": "Elegantno bivanje z udobjem in panoramskim razgledom.",
     "rights": "Vse pravice pridržane.",
-    "country": "Slovenija"
+    "country": "Slovenija",
+    "authors": "Avtor"
   }
 }

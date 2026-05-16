@@ -110,6 +110,7 @@
   "footer": {
     "description": "Elegant accommodation with comfort and panoramic views.",
     "rights": "All rights reserved.",
-    "country": "Slovenia"
+    "country": "Slovenia",
+    "authors": "Author"
   }
 }
