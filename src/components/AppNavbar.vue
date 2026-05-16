@@ -1,4 +1,11 @@
 <template>
+
+  <div
+    v-if="isMenuOpen"
+    class="overlay"
+    @click="closeMenu"
+  />
+
   <header class="navbar">
     
     <div class="logo">
@@ -17,12 +24,6 @@
       <span></span>
       <span></span>
     </button>
-
-    <div
-      v-if="isMenuOpen"
-      class="overlay"
-      @click="closeMenu"
-    />
 
     <div class="menu" :class="{ open: isMenuOpen }">
       <ul class="nav-links">
@@ -96,25 +97,52 @@ watch(() => route.fullPath, () => {
 
 /* ESC key close */
 function handleKey(e) {
-  if (e.key === 'Escape') closeMenu()
+  if (e.key === 'Escape') {
+    closeMenu()
+  }
 }
 
-/* Scroll lock */
-function lockScroll(lock) {
-  document.body.style.overflow = lock ? 'hidden' : ''
+/* Close menu when page scrolls */
+function handleScroll() {
+  if (isMenuOpen.value) {
+    closeMenu()
+  }
 }
 
-watch(isMenuOpen, (val) => {
-  lockScroll(val)
+/* Lock body scroll only when menu is open */
+watch(isMenuOpen, (isOpen) => {
+  document.body.style.overflow = isOpen ? 'hidden' : ''
 })
 
 onMounted(() => {
   window.addEventListener('keydown', handleKey)
+
+  /*
+    Use document-level listeners in capture phase.
+    This ensures the menu closes even if:
+    - body scrolling is locked (overflow: hidden)
+    - scrolling occurs inside another scrollable container
+    - touch scrolling happens on mobile
+  */
+  document.addEventListener('scroll', handleScroll, true)
+  document.addEventListener('touchmove', handleScroll, {
+    passive: true,
+    capture: true,
+  })
+  document.addEventListener('wheel', handleScroll, {
+    passive: true,
+    capture: true,
+  })
 })
 
 onBeforeUnmount(() => {
   window.removeEventListener('keydown', handleKey)
-  lockScroll(false)
+
+  document.removeEventListener('scroll', handleScroll, true)
+  document.removeEventListener('touchmove', handleScroll, true)
+  document.removeEventListener('wheel', handleScroll, true)
+
+  document.body.style.overflow = ''
 })
 </script>
 
@@ -188,7 +216,7 @@ onBeforeUnmount(() => {
   justify-content: space-between;
   gap: 2rem;
 
-  background: (var(--color-surface));
+  background: var(--color-surface);
   backdrop-filter: blur(10px);
 }
 
@@ -277,7 +305,7 @@ onBeforeUnmount(() => {
   border-color: var(--color-primary);
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
   .hamburger {
     display: block;
   }
@@ -294,7 +322,7 @@ onBeforeUnmount(() => {
     justify-content: flex-start;
     align-items: center;
 
-    padding-top: 4rem 1.5rem 2rem;
+    padding: 4rem 1.5rem 2rem;
 
     background: var(--color-background);
     opacity: 0.95;

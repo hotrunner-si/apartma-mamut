@@ -45,12 +45,6 @@ export const gallery = {
     { src: "/images/kuhinja.jpg", 
       alt: "gallery.grid.02"
     },
-    { src: "/images/tv-miza.jpg", 
-      alt: "gallery.grid.03"
-    },
-    { src: "/images/bedroom.jpg", 
-      alt: "galery.grid.04"
-    },
   ],
   tape: [
     { src: "/images/prostor-za-kufer.jpg", 
@@ -153,9 +147,10 @@ export const footer = {
   description: "Elegant apartment living with comfort and panoramic views.",
   phone: "+386 41 791 363",
   email: "mamut1850@gmail.com",
-  address: "Prešernova ulica 12", 
+  address: "Prešernova ulica 12",
+  google_maps: "https://maps.app.goo.gl/bRGE8r8eLaUR9Vto8",
   postNumber: "1241",
   town: "Kamnik", 
   country: "Slovenia",
-  authors: "https://nejs-ursic.netlify.app"
+  authors: "https://nejc-ursic.netlify.app"
 }

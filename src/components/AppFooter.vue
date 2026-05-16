@@ -13,14 +13,17 @@
         <a :href="`mailto:${footer.email}`">
           {{footer.email}}
         </a>
-        <span>
+        <a :href="footer.google_maps">
           {{footer.town}}, {{footer.country}}
-        </span>
+        </a>
       </div>
     </div>
 
     <div class="footer-bottom">
       <p>&copy; {{ currentYear }} {{ footer.brand }}. {{t('footer.rights')}}</p>
+      <a :href="footer.authors">
+        {{ t('footer.authors') }}
+      </a>
     </div>
   </footer>
 </template>
@@ -85,10 +88,17 @@ const { t } = useI18n()
 .footer-bottom {
   border-top: 1px solid var(--color-border);
   padding: 1.25rem 1.5rem;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+
+  flex-wrap: wrap;
   text-align: center;
 }
 
-.footer-bottom p {
+.footer-bottom p, a {
   margin: 0;
   font-size: 0.85rem;
   color: var(--color-text-secondary);
