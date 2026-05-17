@@ -1,12 +1,45 @@
 {
+  "seo": {
+    "title": "Apartma Mamut Kamnik | Apartma v centru blizu Velike planine Slovenija",
+    "description": "Udoben apartma v centru Kamnika v Sloveniji. Pogled na gore, sodobna oprema, blizu Velike planine in Ljubljane. Rezervirajte bivanje v Apartmaju Mamut.",
+    "keywords": "apartma Kamnik, nastanitev Kamnik Slovenija, apartma center Kamnik, apartma staro mestno jedro Kamnik, počitniški najem Kamnik, Velika planina apartma, Kamniška Bistrica nastanitev, Kamnik Savinjske Alpe bivanje, Ljubljana apartma, nastanitev Slovenija Alpe",
+    "ogImageAlt": "Apartma Mamut v Kamniku v Sloveniji s pogledom na gore",
+    "twitterCard": "summary_large_image"
+  },
+
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "VacationRental",
+    "name": "Apartma Mamut 1850",
+    "description": "Sodoben studio apartma v centru Kamnika v Sloveniji s pogledom na gore. Blizu Velike planine in Ljubljane.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Prešernova ulica 12",
+      "addressLocality": "Kamnik",
+      "postalCode": "1241",
+      "addressCountry": "SI"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "46.2257",
+      "longitude": "14.6122"
+    },
+    "amenityFeature": [
+      "Brezplačen WiFi",
+      "Zasebno parkirišče",
+      "Kuhinja",
+      "Klimatska naprava"
+    ]
+  },
+
   "brand": {
-    "name": "Apartma Mamut"
+    "name": "Apartma Mamut 1850"
   },
 
   "nav": {
     "darkMode": "Temni način",
     "lightMode": "Svetli način",
-    "about": "O nas",
+    "about": "O apartmaju",
     "gallery": "Galerija",
     "prices": "Cene",
     "availability": "Razpoložljivost",
@@ -15,23 +48,23 @@
   },
 
   "hero": {
-    "title": "Vaše popolno bivanje",
-    "subtitle": "V osrčju Slovenije",
-    "cta": "Rezerviraj zdaj",
-    "imageAlt": "Čudovit pogled na mesto Kamnik in gore."
+    "title": "Apartma v centru Kamnika",
+    "subtitle": "Sodoben oddih s pogledom na gore blizu Velike planine, Slovenija",
+    "cta": "Preveri razpoložljivost in rezerviraj",
+    "imageAlt": "Apartma v Kamniku s panoramskim pogledom na gore v Sloveniji"
   },
 
   "about": {
     "title": "O apartmaju",
-    "text": "Apartma Mamut 1850 ponuja prijetno in elegantno namestitev s čudovitim razgledom na gore. Nahaja se blizu narave in lokalnih znamenitosti ter vključuje popolnoma opremljeno kuhinjo, brezplačen Wi-Fi, zasebno parkirišče in udobno posteljo.",
+    "text": "Apartma Mamut 1850 je sodoben studio apartma v samem centru Kamnika v Sloveniji. Ponuja udobno bivanje za dve osebi z enostavnim dostopom do Velike planine, Ljubljane in Kamniško-Savinjskih Alp. Apartma vključuje popolnoma opremljeno kuhinjo, brezplačen WiFi, zasebno parkirišče in prijeten spalni prostor, kar ga naredi idealnega za pare, solo potnike in krajše oddihe v mestu ali naravi.",
     "features": [
       {
         "title": "Studio",
-        "text": "Udobno bivanje za 2 gosta."
+        "text": "Udoben spalni prostor za 2 gosta."
       },
       {
-        "title": "Popolna oprema",
-        "text": "Kuhinja, pralni stroj, TV in hiter internet."
+        "title": "Popolnoma opremljen",
+        "text": "Kuhinja, pomivalni stroj, TV in hiter internet."
       },
       {
         "title": "Odlična lokacija",
@@ -42,51 +75,49 @@
 
   "gallery": {
     "title": "Galerija",
-    "text": "Oglejte si našo galerijo in doživite vzdušje apartmaja Mamut 1850.",
+    "text": "Oglejte si galerijo in doživite vzdušje Apartmaja Mamut 1850.",
     "grid": {
-      "01": "Living room with mountain view",
-      "02": "Dining area with modern decor",
-      "03": "Cozy seating area with fireplace",
-      "04": "Bedroom with comfortable bed"
+      "01": "Sodobna spalnica apartmaja s pogledom na gore v Kamniku Slovenija",
+      "02": "Popolnoma opremljena kuhinja v Apartmaju Mamut v centru Kamnika",
+      "03": "Udoben dnevni prostor s kaminom",
+      "04": "Spalnica z udobno posteljo"
     },
     "tape": {
-      "01": "Balcony with mountain view",
-      "02": "Dining area with modern decor",
-      "03": "Cozy seating area with fireplace",
-      "04": "Bedroom with comfortable bed",
-      "05": "Living room with cozy seating",
-      "06": "Bedroom with comfortable bed",
-      "07": "Balcony with mountain view",
-      "08": "Dining area with modern decor",
-      "09": "Cozy seating area with fireplace",
-      "10": "Bedroom with comfortable bed",
-      "11": "Living room with cozy seating",
-      "12": "Bedroom with comfortable bed",
-      "13": "Balcony with mountain view",
-      "14": "Dining area with modern decor",
-      "15": "Cozy seating area with fireplace",
-      "16": "Bedroom with comfortable bed",
-      "17": "Living room with cozy seating",
-      "18": "Bedroom with comfortable bed",
-      "19": "Balcony with mountain view",
-      "20": "Dining area with modern decor"
+      "01": "Shramba in garderobni prostor v studiu Apartma Mamut v Kamniku",
+      "02": "Sodoben TV in jedilni prostor v Apartmaju Mamut v centru Kamnika",
+      "03": "Udobna jedilna miza z rožami v Apartmaju Mamut Kamnik",
+      "04": "Celoten pogled studia v Kamniku z razporeditvijo postelje, kuhinje, vhoda in kopalnice",
+      "05": "Klimatska naprava v sodobnem apartmaju v Kamniku Slovenija",
+      "06": "Vhod v kopalnico s tušem, straniščem in radiatorjem v Apartmaju Mamut Kamnik",
+      "07": "Sodobna kopalnica z umivalnikom, ogledalom, straniščem in shrambo",
+      "08": "Walk-in tuš v Apartmaju Mamut Kamnik Slovenija",
+      "09": "Velika udobna postelja v studiu Kamnik Slovenija",
+      "10": "Zunanjost zgodovinske stavbe v Kamniku Slovenija",
+      "11": "Zgodovinska plošča z letnico 1850 in arhitektom Jožetom Plečnikom v Kamniku",
+      "12": "Zasebno parkirišče Apartmaja Mamut Kamnik",
+      "13": "Skulptura mamuta na glavni avtobusni postaji v Kamniku",
+      "14": "Pogled na Mali grad v Kamniku Slovenija",
+      "15": "Mali grad v Kamniku pozimi pokrit s snegom",
+      "16": "Glavni trg v Kamniku z e-kolesi in starim mestnim jedrom",
+      "17": "Panoramski pogled na Kamnik z gradovi in gorami",
+      "18": "Mali grad z Alpami v ozadju pri Kamniku",
+      "19": "Zračni posnetek Kamnika in Kamniško-Savinjskih Alp"
     }
   },
 
   "prices": {
-    "title": "Cene / noč",
+    "title": "Cena / noč",
     "season1": "Vrhunec sezone",
-    "season2": "visoka sezona",
-    "season3": "prehodna sezona",
-    "season4": "nizka sezona"
+    "season2": "Visoka sezona",
+    "season3": "Srednja sezona",
+    "season4": "Nizka sezona"
   },
 
   "availability": {
     "title": "Razpoložljivost",
-    "text": "Preverite razpoložljive termine in nas kontaktirajte za rezervacijo.",
+    "text": "Preverite razpoložljivost in nas kontaktirajte za potrditev termina.",
     "details": [
-      "Na voljo: večina vikendov in praznikov.",
-      "Minimalno bivanje: 2 noči.",
+      "Na voljo: večina vikendov in prazničnih obdobij.",
       "Prijava: po 15:00",
       "Odjava: do 10:00"
     ]
@@ -94,20 +125,20 @@
 
   "location": {
     "title": "Lokacija",
-    "text": "Apartma se nahaja v Kamniku in omogoča hiter dostop do Velike planine, Ljubljane in Alp.",
+    "text": "Apartma se nahaja v zgodovinskem centru Kamnika. V neposredni bližini so kavarne, restavracije in znamenitosti starega mestnega jedra. Odlična izhodiščna točka za Veliko planino, Kamniško-Savinjske Alpe in Ljubljano.",
     "mapText": "Kamnik, Slovenija",
-    "mapAlt": "Zemljevid lokacije apartmaja Mamut 1850"
+    "mapAlt": "Ročno narisan zemljevid centra Kamnika z lokacijo Apartmaja Mamut"
   },
 
   "contact": {
     "title": "Kontakt",
     "email": "mamut1850{'@'}gmail.com",
     "phone": "+386 41 791 363",
-    "address": "Prešernova ulica 12, 1241 Kamnik, Slovenia"
+    "address": "Prešernova ulica 12, 1241 Kamnik, Slovenija"
   },
 
   "footer": {
-    "description": "Elegantno bivanje z udobjem in panoramskim razgledom.",
+    "description": "Elegantna nastanitev z udobjem in panoramskim razgledom.",
     "rights": "Vse pravice pridržane.",
     "country": "Slovenija",
     "authors": "Avtor"

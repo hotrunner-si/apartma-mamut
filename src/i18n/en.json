@@ -1,6 +1,38 @@
 {
+  "seo": {
+    "title": "Apartment Mamut Kamnik | Center Apartment Near Velika Planina Slovenia",
+    "description": "Cozy apartment in the center of Kamnik, Slovenia. Mountain views, modern amenities, near Velika Planina & Ljubljana. Book your stay at Apartment Mamut.",
+    "keywords": "apartment Kamnik, accommodation Kamnik Slovenia, Kamnik center apartment, apartment in Kamnik old town, Kamnik holiday rental, Velika Planina apartment, Kamniška Bistrica accommodation, Kamnik Savinja Alps stay, Ljubljana day trip apartment, Slovenia Alps accommodation",
+    "ogImageAlt": "Apartment Mamut in Kamnik Slovenia with mountain views",
+    "twitterCard": "summary_large_image"
+  },
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "VacationRental",
+    "name": "Apartment Mamut 1850",
+    "description": "Modern studio apartment in the center of Kamnik, Slovenia with mountain views. Near Velika Planina and Ljubljana.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Prešernova ulica 12",
+      "addressLocality": "Kamnik",
+      "postalCode": "1241",
+      "addressCountry": "SI"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "46.2257",
+      "longitude": "14.6122"
+    },
+    "amenityFeature": [
+      "Free WiFi",
+      "Private parking",
+      "Kitchen",
+      "Air conditioning"
+    ]
+  },
+
   "brand": {
-    "name": "Apartment Mamut"
+    "name": "Apartment Mamut 1850"
   },
 
   "nav": {
@@ -15,15 +47,15 @@
   },
 
   "hero": {
-    "title": "Your Perfect Stay",
-    "subtitle": "In the Heart of Slovenia.",
-    "cta": "Book Now",
-    "imageAlt": "A stunning view of the town and mountains."
+    "title": "Apartment in the Center of Kamnik",
+    "subtitle": "Modern stay with mountain views near Velika Planina, Slovenia",
+    "cta": "Check Availability & Book",
+    "imageAlt": "Apartment in Kamnik with panoramic mountain views in Slovenia"
   },
 
   "about": {
     "title": "About the Apartment",
-    "text": "Apartment Mamut 1850 offers a cozy and elegant accommodation with stunning mountain views. Located near nature and local attractions, the apartment features a fully equipped kitchen, free Wi-Fi, private parking, and a spacious bed.",
+    "text": "Apartment Mamut 1850 is a modern studio apartment located in the very center of Kamnik, Slovenia. It offers a comfortable stay for two guests with beautiful mountain views and easy access to Velika Planina, Ljubljana, and the Kamnik-Savinja Alps. The apartment includes a fully equipped kitchen, free Wi-Fi, private parking, and a cozy sleeping area, making it ideal for couples, solo travelers, and short city or nature getaways.",
     "features": [
       {
         "title": "Studio",
@@ -45,32 +77,31 @@
     "title": "Gallery",
     "text": "Take a look at our gallery and experience the atmosphere of Apartment Mamut 1850.",
     "grid": {
-      "01": "Living room with mountain view",
-      "02": "Dining area with modern decor",
+      "01": "Modern apartment bedroom with mountain view in Kamnik Slovenia",
+      "02": "Fully equipped kitchen in the Apartment Mamut in Kamnik town center",
       "03": "Cozy seating area with fireplace",
       "04": "Bedroom with comfortable bed"
     },
     "tape": {
-      "01": "Balcony with mountain view",
-      "02": "Dining area with modern decor",
-      "03": "Cozy seating area with fireplace",
-      "04": "Bedroom with comfortable bed",
-      "05": "Living room with cozy seating",
-      "06": "Bedroom with comfortable bed",
-      "07": "Balcony with mountain view",
-      "08": "Dining area with modern decor",
-      "09": "Cozy seating area with fireplace",
-      "10": "Bedroom with comfortable bed",
-      "11": "Living room with cozy seating",
-      "12": "Bedroom with comfortable bed",
-      "13": "Balcony with mountain view",
-      "14": "Dining area with modern decor",
-      "15": "Cozy seating area with fireplace",
-      "16": "Bedroom with comfortable bed",
-      "17": "Living room with cozy seating",
-      "18": "Bedroom with comfortable bed",
-      "19": "Balcony with mountain view",
-      "20": "Dining area with modern decor"
+      "01": "Storage and wardrobe area in Apartment Mamut studio in Kamnik, Slovenia",
+      "02": "Modern TV and dining area inside Apartment Mamut in Kamnik center",
+      "03": "Cozy dining table with flowers in Apartment Mamut Kamnik Slovenia",
+      "04": "Full view of studio apartment layout in Kamnik showing bed, kitchen, entrance, and bathroom",
+      "05": "Air conditioning unit in modern apartment in Kamnik Slovenia",
+      "06": "Bathroom entrance with shower, toilet, and radiator in Apartment Mamut Kamnik",
+      "07": "Modern bathroom interior with sink, mirror, toilet, and storage in Kamnik apartment",
+      "08": "Walk-in shower in Apartment Mamut Kamnik Slovenia",
+      "09": "Large comfortable bed in studio apartment Kamnik Slovenia",
+      "10": "Exterior facade of historic building in Kamnik Slovenia",
+      "11": "Historic building plaque showing 1850 construction and architect Jože Plečnik in Kamnik",
+      "12": "Private enclosed parking space at Apartment Mamut Kamnik",
+      "13": "Mamut statue at main bus station in Kamnik Slovenia",
+      "14": "View of Mali Grad castle in Kamnik Slovenia",
+      "15": "Mali Grad castle in Kamnik covered in snow with winter scenery",
+      "16": "Main square of Kamnik center with e-bike rental station and old town atmosphere",
+      "17": "Panoramic view over Kamnik with castles, church, and surrounding mountains",
+      "18": "Mali Grad castle with Alpine mountains in background near Kamnik Slovenia",
+      "19": "Aerial drone panorama of Kamnik center and Kamnik-Savinja Alps including Velika Planina"
     }
   },
 
@@ -87,7 +118,6 @@
     "text": "Check our current availability and contact us to confirm your dates.",
     "details": [
       "Available: Most weekends and holiday periods.",
-      "Minimum stay: 2 nights.",
       "Check-in: After 15:00",
       "Check-out: Before 10:00"
     ]
@@ -95,9 +125,9 @@
 
   "location": {
     "title": "Location",
-    "text": "Situated in Kamnik, Slovenia, the apartment provides easy access to Velika Planina, Ljubljana, and the surrounding Alps.",
+    "text": "Located in the historic center of Kamnik, Apartment Mamut offers one of the best-positioned stays in the town. Guests are within walking distance of cafes, restaurants, and old town attractions. The apartment is also a perfect base for visiting Velika Planina, the Kamnik-Savinja Alps, and Ljubljana, which is only a short drive away.",
     "mapText": "Kamnik, Slovenia",
-    "mapAlt": "Map showing the location of Apartment Mamut 1850 in Kamnik, Slovenia"
+    "mapAlt": "Hand-drawn map of Kamnik town center showing Apartment Mamut location"
   },
 
   "contact": {

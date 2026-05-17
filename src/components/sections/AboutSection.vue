@@ -51,4 +51,5 @@ const { t, tm } = useI18n()
   color: var(--color-text-secondary);
   margin: 0;
 }
+
 </style>
