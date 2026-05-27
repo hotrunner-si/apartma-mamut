@@ -20,14 +20,16 @@
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": "46.2257",
-      "longitude": "14.6122"
+      "latitude": "46.2254",
+      "longitude": "14.6127"
     },
     "amenityFeature": [
       "Free WiFi",
       "Private parking",
       "Kitchen",
-      "Air conditioning"
+      "Air conditioning",
+      "Dishwasher",
+      "Television"
     ]
   },
 
@@ -63,7 +65,7 @@
       },
       {
         "title": "Fully Equipped",
-        "text": "Kitchen, washing machine, TV, and fast internet."
+        "text": "Kitchen, dishwasher, TV, and fast internet."
       },
       {
         "title": "Great Location",

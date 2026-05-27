@@ -1,38 +1,15 @@
-# apartma-mamut-vue
+# apartma-mamut 1850
 
-This template should help get you started developing with Vue 3 in Vite.
+Spletna stran za Apartma Mamut 1850 Kamnik
 
-## Recommended IDE Setup
+## vue project
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+Zgrajena z vite@latest
 
-## Recommended Browser Setup
+## apartma-mamut.si
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+Gostuje na hitrost.net
 
-## Customize configuration
+## plan:
 
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
+V prihodnosti želim dodati še CMS, podstran za podrobne informacije, ki ne spadajo na predstavitveno stran in podstran za informacije gostom, ki že bivajo na nastanitvi.

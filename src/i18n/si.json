@@ -21,14 +21,16 @@
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": "46.2257",
-      "longitude": "14.6122"
+      "latitude": "46.2254",
+      "longitude": "14.6127"
     },
     "amenityFeature": [
       "Brezplačen WiFi",
       "Zasebno parkirišče",
       "Kuhinja",
-      "Klimatska naprava"
+      "Klimatska naprava",
+      "Pomivalni stroj",
+      "Televizor"
     ]
   },
 
