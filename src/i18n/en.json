@@ -108,7 +108,9 @@
   },
 
   "prices": {
-    "title": "Prices / night",
+    "title": "Prices",
+    "text1": "Check our current pricing and contact us to confirm your dates.",
+    "text2": "Availability can also be checked on booking.com",
     "season1": "Peak Season",
     "season2": "High Season",
     "season3": "Mid Season",
@@ -136,11 +138,12 @@
     "title": "Contact",
     "email": "mamut1850{'@'}gmail.com",
     "phone": "+386 41 791 363",
-    "address": "Prešernova ulica 12, 1241 Kamnik, Slovenia"
+    "address": "Prešernova ulica 12, 1241 Kamnik, Slovenia",
+    "booking": "Booking.com"
   },
 
   "footer": {
-    "description": "Elegant accommodation with comfort and panoramic views.",
+    "description": "Elegant accommodation with comfort of a small town.",
     "rights": "All rights reserved.",
     "country": "Slovenia",
     "authors": "Author"

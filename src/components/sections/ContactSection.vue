@@ -1,12 +1,15 @@
 <template>
-  <section id="contact" class="section section-alt">
+  <section id="contact" class="section">
     <div class="container">
       <h2>{{t('contact.title')}}</h2>
 
       <form class="contact-form" @submit.prevent="submitForm">
           <input type="text" placeholder="Your Name" required />
           <input type="email" placeholder="Your Email" required />
-          <input type="text" placeholder="Arrival Dates" />
+          <div class="date-inputs">
+            <input type="text" placeholder="Arrival Dates" />
+            <input type="text" placeholder="Departure Dates" />
+          </div>
           <textarea
             rows="5"
             placeholder="Your Message"
@@ -17,6 +20,9 @@
         <div class="contact-info">
           <p><strong>Email:</strong> {{ t('contact.email') }}</p>
           <p><strong>Phone:</strong> {{ t('contact.phone') }}</p>
+          <a href="https://www.booking.com/hotel/si/apartma-mamut.html" target="_blank" class="btn-secondary">
+            {{ t('contact.booking') }}
+          </a>
         </div>
     </div>
   </section>
@@ -28,7 +34,7 @@ import { useI18n } from 'vue-i18n'
 const { t } = useI18n()
 
 function submitForm() {
-  alert('Something went wrong!')
+  alert('Something went wrong. Please contact us via email or phone. \n Nekaj je šlo narobe. Prosimo, kontaktirajte nas preko emaila ali telefona.')
 }
 
 </script>
@@ -48,6 +54,10 @@ function submitForm() {
   border: 1px solid #d1d5db;
   border-radius: 0.75rem;
   font: inherit;
+}
+.date-inputs {
+  display: flex;
+  gap: 1rem;
 }
 
 .contact-info {

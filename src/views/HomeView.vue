@@ -19,7 +19,6 @@ useSeo()
   <AboutSection />
   <GallerySection />
   <PricesSection />
-  <AvailabilitySection />
   <LocationSection />
   <ContactSection />
 

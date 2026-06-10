@@ -2,6 +2,7 @@
   <section id="prices" class="section">
     <div class="container">
       <h2>{{ t('prices.title') }}</h2>
+      <p>{{ t('prices.text1') }}</p>
 
       <div class="price-cards">
         <div
@@ -27,6 +28,9 @@ import { prices } from '../../data/content.js'
 </script>
 
 <style scoped>
+.container {
+  text-align: center;
+}
 .price-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));

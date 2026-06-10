@@ -1,7 +1,7 @@
 
 
 <template>
-  <section id="location">
+  <section id="location" class="section section-alt">
     <div class="container">
       <h2>{{ t('location.title') }}</h2>
       <p>{{ t('location.text') }}</p>
